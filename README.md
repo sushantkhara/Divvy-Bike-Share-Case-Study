@@ -256,6 +256,7 @@ all_trips_v2 %>%
        caption = "Data Collected by Motivate International Inc.")
 ```
 # This graph shows how many rides taken by customers annually on each day
+![Total Rides over last 12 months](https://user-images.githubusercontent.com/74862660/117622045-d95b2180-b18f-11eb-9fc4-e48db63985c9.png)
 
 # Let's create a visualization for average duration
 ```{r}
@@ -273,6 +274,7 @@ all_trips_v2 %>%
 ```
 # This graph shows that 22.50% (i.e total 2,35,934 casual riders) of customers(total 10,48,576 customers) who are casual riders have high average trip duration 
 # annually than the annual members(total 8,12,641).
+![Average Trip duration last 12 months](https://user-images.githubusercontent.com/74862660/117622074-e11ac600-b18f-11eb-9436-b4da978b7996.png)
 
 #=================================================
 # STEP 5: EXPORT SUMMARY FILE FOR FURTHER ANALYSIS
