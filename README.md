@@ -272,7 +272,7 @@ all_trips_v2 %>%
                     subtitle = "On Weekdays over the last 12 months",
                     caption = "Data Collected by Motivate International Inc.")
 ```
-# This graph shows that 23% of customers who are casual riders have high average trip duration annually everyday than the annual members' average trip duration.
+# This graph shows that 23% of customers who are casual riders have high average trip duration annually everyday than the annual member's average trip duration.
 
 ![image](https://user-images.githubusercontent.com/74862660/117642456-eb938a80-b1a4-11eb-9bd3-9282929e535e.png)
 
