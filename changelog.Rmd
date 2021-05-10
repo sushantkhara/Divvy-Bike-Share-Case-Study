@@ -1,0 +1,83 @@
+---
+title: "Changelog"
+author: "Sushant"
+date: "05/05/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Changelog
+This file contains notable changes to the project
+
+Version 1.0.0 (05-05-2021)
+
+## Changes 1.1
+    # Column Names
+    
+    - Changed dataset q4_2019 column names to avoid inconsistency
+                   ride_id = trip_id
+                   ,rideable_type = bikeid 
+                   ,started_at = start_time  
+                   ,ended_at = end_time  
+                   ,start_station_name = from_station_name 
+                   ,start_station_id = from_station_id 
+                   ,end_station_name = to_station_name 
+                   ,end_station_id = to_station_id 
+                   ,member_casual = usertype
+                   
+    - Changed dataset q3_2019 column names to avoid inconsistency
+                   ride_id = trip_id
+                   ,rideable_type = bikeid 
+                   ,started_at = start_time  
+                   ,ended_at = end_time  
+                   ,start_station_name = from_station_name 
+                   ,start_station_id = from_station_id 
+                   ,end_station_name = to_station_name 
+                   ,end_station_id = to_station_id 
+                   ,member_casual = usertype
+    - changed dataset q2_2019
+                   ride_id = "01 - Rental Details Rental ID"
+                   ,rideable_type = "01 - Rental Details Bike ID" 
+                   ,started_at = "01 - Rental Details Local Start Time"  
+                   ,ended_at = "01 - Rental Details Local End Time"  
+                   ,start_station_name = "03 - Rental Start Station Name" 
+                   ,start_station_id = "03 - Rental Start Station ID"
+                   ,end_station_name = "02 - Rental End Station Name" 
+                   ,end_station_id = "02 - Rental End Station ID"
+                   ,member_casual = "User Type"
+    # Data types
+    
+    - data types of ride_id and rideable_type in q2_2019,q3_2019 and q4_2019 datasets ,
+      converted to character
+      
+## New 1.1
+- Merged 12 months' dataset into single data frame -> all_trips  
+
+
+## Changes 1.2
+    - Removed lat, long, birthyear, and gender fields from the new data frame -> all_trips
+    
+    
+## Fixes 1.1
+    - In the "member_casual" column, replaced "Subscriber" with "member" and "Customer" with "casual"
+     to improve data integrity by keeping two types of users.
+     
+## New 1.2
+    - Added new columns date, month, day, and year of each ride to ease the aggregation of ride data in terms of year, month, date,         day of each ride.
+    - Added ride_length column to calculate the trip-duration
+    
+## Changes 1.3
+    - Removed duplicate, missing and empty fields
+    - Removed fields with Negative entries for ride_length or when bikes were taken out of docks and checked for quality by Divvy 
+    
+## Fixes 1.2
+    - Noticed days of the week are not in order hence fixed by setting them in order
+
+## Changes 1.3
+    - Added column weekday which tells the weekday of bike ride
+ 
+     
+    
